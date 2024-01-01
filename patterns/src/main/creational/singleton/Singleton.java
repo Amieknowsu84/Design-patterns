@@ -1,4 +1,4 @@
-package main.creational;
+package main.creational.singleton;
 
 public class Singleton {
     private static volatile Singleton singleton;

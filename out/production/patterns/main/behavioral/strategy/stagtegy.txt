@@ -1,0 +1,41 @@
+The Strategy Design Pattern is used when you want to define a family of algorithms,
+encapsulate each algorithm, and make them interchangeable.
+This pattern allows a client to choose the appropriate algorithm at runtime without altering
+its structure. You should consider using the Strategy pattern in the following scenarios:
+
+Multiple Algorithms:
+
+Scenario: When you have a family of related algorithms,
+ and you want to provide flexibility in choosing the appropriate algorithm at runtime.
+Example: Consider a sorting application where you want to support multiple sorting algorithms
+ (e.g., QuickSort, MergeSort, BubbleSort).
+  Using the Strategy pattern, you can encapsulate each sorting algorithm in a separate strategy class
+
+Avoiding Code Duplication:
+
+Scenario: When you find yourself duplicating code with slight variations to accommodate different behaviors.
+Example: In a graphics application,
+you might have different drawing tools (e.g., Pencil, Brush, Eraser).
+Using the Strategy pattern, you can encapsulate the drawing behavior in separate strategy classes,
+avoiding code duplication.
+
+Runtime Algorithm Selection:
+
+Scenario: When you want to select an algorithm at runtime based on specific conditions or user preferences.
+Example: In a navigation system, you may have different route-finding algorithms (e.g., Shortest Path, Fastest Route).
+Using the Strategy pattern,
+you can switch between algorithms based on user preferences or real-time traffic conditions.
+
+Promoting Flexibility:
+
+Scenario: When you want to make a class more flexible by allowing its behavior to be extended or modified without altering its code.
+Example: Consider a billing system where you want to apply different discount strategies (e.g., Flat Discount, Percentage Discount).
+Using the Strategy pattern, you can define each discount strategy separately and apply it dynamically.
+
+
+Testing and Maintenance:
+
+Scenario: When you want to simplify testing or maintenance by isolating different algorithms in separate classes.
+Example: In a payment processing system, you may have multiple payment gateways (e.g., PayPal, Stripe).
+Using the Strategy pattern, you can isolate the logic for each payment gateway,
+making it easier to test and maintain.

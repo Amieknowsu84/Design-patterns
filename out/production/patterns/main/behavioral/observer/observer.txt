@@ -1,0 +1,44 @@
+
+The Observer Design Pattern is used when a subject (or publisher)
+ needs to notify a group of observers (or subscribers) about changes in its state.
+ This pattern is particularly useful when you have a one-to-many dependency between objects,
+ and you want to avoid a tight coupling between them.
+
+ When to Use Observer Design Pattern:
+
+ Decoupling:
+
+ Scenario: When you want to decouple the sender (subject) and receivers (observers)
+  so that changes in one do not require changes in the other.
+ Example: Consider a stock market application where multiple components
+ need to be updated when the stock prices change.
+  Using the Observer pattern, each component can register as an observer,
+   and the stock market can notify all observers when prices change without needing to know
+   the details of each observer.
+
+Distributed Systems:
+
+Scenario: In distributed systems where components may be physically separated
+          and need to react to changes in a centralized entity.
+Example: In a weather monitoring system with sensors located in different regions,
+  each display unit can be an observer of the central weather station.
+  When the weather station updates the weather data,
+  all display units are automatically notified and updated.
+
+Event Handling:
+
+Scenario: When you need to implement event handling systems
+          where multiple entities react to events without explicitly knowing each other.
+Example: In a graphical user interface (GUI),
+         the Observer pattern is often used for event handling.
+         Widgets such as buttons, checkboxes, and sliders
+         can be observers of a central event manager.
+         When an event occurs, the manager notifies all registered observers.
+
+Dynamic Systems:
+
+Scenario: In systems where the number of observers can change dynamically,
+and you want to support loose coupling.
+Example: In an online auction system, multiple users may be interested in bidding on an item.
+ Each user can be an observer of the auction, and when the bidding status changes,
+  all interested users are notified.

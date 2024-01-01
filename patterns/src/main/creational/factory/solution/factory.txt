@@ -1,0 +1,5 @@
+When to use it
+->use if you have no idea of the exact types of objects your code will work with.
+->make it easy to extend the product construction code independently of rest of the application.
+->allows introducing new products without breaking existing products.
+->follows open close and single responsibility principle.

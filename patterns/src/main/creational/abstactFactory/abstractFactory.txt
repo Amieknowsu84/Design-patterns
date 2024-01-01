@@ -1,0 +1,3 @@
+->allows you to produce family of related objects without specifying
+ their concrete class
+    

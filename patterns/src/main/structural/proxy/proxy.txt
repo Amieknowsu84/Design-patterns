@@ -1,0 +1,81 @@
+The Proxy Pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it.
+
+Let's assume we have an interface Image representing an image,
+ and we want to create a proxy for loading and displaying images lazily:
+
+Image is the interface for the real object (RealImage) and its proxy (ProxyImage).
+RealImage is the real object that loads and displays the image.
+It does the actual work when the display method is called.
+ProxyImage is the proxy class that controls access to the RealImage.
+It delays the creation and loading of the RealImage until the display method is called.
+This is known as lazy loading.
+When the client code requests the display of an image using a proxy,
+the real image is only loaded and displayed if it hasn't been loaded before.
+This lazy loading behavior is a common use case for the Proxy Pattern,
+as it can help improve performance when working with expensive-to-create objects,
+such as loading large images from disk or making network requests.
+
+The Proxy Pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it.
+ It has its own set of advantages and disadvantages.
+  Here are the pros and cons of using the Proxy Pattern, along with guidance on when to use it:
+
+**Pros:**
+
+1. **Control Access:** Proxies can control access to the real object.
+ This is useful when you want to add an extra layer of control over how the object is accessed,
+  such as lazy loading, access control, or monitoring.
+
+2. **Lazy Loading:** One of the most common use cases for proxies is lazy loading.
+ The real object is created or loaded only when it's actually needed,
+  saving resources and improving performance.
+
+3. **Security:** Proxies can enforce access controls and provide an additional layer of security.
+ They can restrict certain operations or verify permissions before allowing access to the real object.
+
+4. **Remote Proxies:** Proxy patterns are used in distributed systems to represent objects that are in a different address space.
+ Remote proxies handle communication with the remote object,
+  hiding the details of network communication.
+
+5. **Caching:** Proxies can cache the results of expensive operations,
+ such as database queries or complex calculations,
+  and return cached results when the same operation is requested again,
+   improving performance.
+
+**Cons:**
+
+1. **Complexity:** Introducing proxies can add complexity to the codebase,
+ especially when dealing with multiple layers of proxies or complex proxy logic.
+
+2. **Performance Overhead:** Depending on the proxy's logic,
+ there can be a performance overhead compared to direct access to the real object,
+  especially if there are additional checks or remote calls involved.
+
+**When to Use the Proxy Pattern:**
+
+1. **Lazy Loading:** Use the Proxy Pattern when you need to implement lazy loading of objects
+, meaning that the actual object is only created or loaded when it is needed to conserve resources.
+
+2. **Access Control:** Use proxies to control and restrict access to the real object.
+ For example, you can enforce access controls, permissions, or authorization checks.
+
+3. **Monitoring and Logging:** You can use proxies to add monitoring or logging to the behavior of the real object.
+ This is particularly useful for debugging or auditing purposes.
+
+4. **Caching:** Proxies can be used to implement caching mechanisms.
+They can store and return cached results to reduce the load on the real object and improve performance.
+
+5. **Remote Objects:** In distributed systems or remote communication scenarios,
+ you can use remote proxies to represent objects that exist in a different address space,
+  abstracting away the details of communication.
+
+6. **Virtual Proxies:** When dealing with large or resource-intensive objects,
+ virtual proxies can be used to create lightweight representations until the real object is required.
+
+7. **Smart References:** Proxies can implement reference counting or garbage collection strategies to manage the lifetime of the real object.
+
+In summary, the Proxy Pattern is a versatile design pattern that is especially useful when you need to control access to objects,
+ implement lazy loading, add security checks,
+ or introduce caching and monitoring mechanisms.
+  However, it should be used judiciously to avoid unnecessary complexity and performance overhead.
+
+
