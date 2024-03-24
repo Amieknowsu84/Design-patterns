@@ -1,5 +1,7 @@
 package main.behavioral.strategy;
 
+import java.util.Arrays;
+
 public class Driver {
     public static void main(String[] args) {
         // Create strategies
@@ -21,6 +23,8 @@ public class Driver {
         // Change strategy dynamically to quick sort
         context.setStrategy(quickSort);
         context.performSort(data);
+
+        Arrays.stream(data).forEach(System.out::println);
     }
 }
 
