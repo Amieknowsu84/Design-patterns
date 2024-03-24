@@ -1,14 +1,18 @@
 # Design-patterns
-This repository contains Java implementations of various design patterns. Design patterns are general reusable solutions to commonly occurring problems in software design. They provide a blueprint for structuring code and help make your applications more maintainable, scalable, and flexible.
+This repository contains Java implementations of various design patterns. 
+Design patterns are general reusable solutions to commonly occurring problems in software design.
+They provide a blueprint for structuring code and help make your applications more maintainable, scalable, and flexible.
 
 Table of Contents
 Introduction
-creational Design Patterns
-Singleton
-Factory Method
+
+Creational Design Patterns
 Abstract Factory
 Builder
+Factory Method
 Prototype
+Singleton
+
 Structural Design Patterns
 Adapter
 Bridge
@@ -16,20 +20,23 @@ Composite
 Decorator
 Facade
 Flyweight
+Proxy
+
 Behavioral Design Patterns
-Observer
-Strategy
 Chain of Responsibility
 Command
+Interpreter
 Iterator
 Mediator
-Interpreter
 Memento
+Observer
 State
+Strategy
+
 Introduction
 In this repository, you will find well-documented Java code examples for each design pattern. Each pattern is explained with a brief description and its use case. We encourage you to explore the code, understand the patterns, and see how they can be applied in real-world scenarios.
 
-creational Design Patterns
+Creational Design Patterns
 creational patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
 
 Singleton Pattern
