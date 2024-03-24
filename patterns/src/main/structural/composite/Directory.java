@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Directory implements FileSystemComponent {
-    private String name;
-    private List<FileSystemComponent> components = new ArrayList<>();
+    private final String name;
+    private final List<FileSystemComponent> components = new ArrayList<>();
 
     public Directory(String name) {
         this.name = name;

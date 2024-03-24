@@ -7,7 +7,7 @@ The Adapter Pattern is a structural design pattern that allows objects with inco
 1. **Compatibility**: The Adapter Pattern allows you to make existing classes work with others that have incompatible interfaces,
  facilitating the integration of different systems or components.
 
-2. **Reuse**: It promotes reusability by enabling you to adapt existing classes or components without modifying their source code.
+2. **Reuse**: It promotes re-usability by enabling you to adapt existing classes or components without modifying their source code.
  This preserves the investment in existing code.
 
 3. **Separation of Concerns**: Adapters provide a clear separation between the adapted class and the client code,

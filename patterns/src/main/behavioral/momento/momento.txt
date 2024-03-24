@@ -1,0 +1,20 @@
+The Memento pattern is a behavioral design pattern that allows an object to capture its internal state without exposing its internal structure and subsequently restore that state at a later time.
+It is often used to implement undo mechanisms or to provide a way to revert an object to a previous state.
+
+
+Participants:
+Originator: This is the object whose state needs to be saved.
+ It creates a memento containing a snapshot of its current internal state and also uses the memento to restore its state.
+
+Memento: This is the object that stores the snapshot of the originator's internal state.
+It has two main responsibilities: to save the state of the originator and to provide a way for the originator to restore its state.
+
+Caretaker: This is the object that is responsible for keeping track of the mementos.
+ It doesn't modify or inspect the contents of the mementos but can store them, retrieve them, or pass them to the originator as needed.
+
+
+When to Use:
+
+Use the Memento pattern when you want to capture the internal state of an object so that it can be restored to a previous state later.
+Use it when you need to provide undo functionality in your application.
+Use it when you want to avoid exposing the internal structure of an object while still allowing access to its state.

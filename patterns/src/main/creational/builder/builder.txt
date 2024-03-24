@@ -1,0 +1,21 @@
+The Builder pattern is a creational design pattern that is used to construct complex objects step by step.
+It separates the construction of a complex object from its representation,
+allowing the same construction process to create different representations.
+
+Participants:
+Director: This is an optional class that defines the order in which to call the builder's methods to construct the product.
+
+Builder: This is an interface or abstract class that declares methods for constructing parts of the product.
+
+Concrete Builder: These are the classes that implement the Builder interface and provide specific implementations for constructing the product.
+
+Product: This is the complex object being constructed.
+
+When to Use:
+Use the Builder pattern when the construction of an object is complex and involves multiple steps or parameters.
+Use it when you want to construct different representations of an object using the same construction process.
+
+Benefits:
+Simplifies the construction of complex objects by separating the construction process from the representation.
+Allows you to construct objects step by step, providing flexibility in the construction process.
+Improves code readability and maintainability by encapsulating the construction logic in separate builder classes.

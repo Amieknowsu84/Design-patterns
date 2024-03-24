@@ -1,0 +1,32 @@
+The Chain of Responsibility pattern is a behavioral design pattern that allows multiple objects to handle a request without the sender needing to know which object will ultimately process it. It promotes loose coupling by decoupling senders and receivers of requests and by allowing multiple handlers to process the request independently.
+
+Participants:
+Handler: This is the interface or abstract class that defines a method for handling requests and a reference to the next handler in the chain.
+ It typically includes a method like handleRequest().
+
+Concrete Handler: These are the concrete implementations of the Handler interface.
+ Each concrete handler handles requests that it is responsible for and passes requests that it cannot handle to the next handler in the chain.
+
+Client: This is the object that sends requests to the handlers.
+ It doesn't need to know the concrete handlers in the chain or how they are interconnected.
+
+When to Use:
+Use the Chain of Responsibility pattern when you want to decouple senders and receivers of requests.
+Use it when you want to allow multiple objects to handle a request without the sender needing to know which object will handle it.
+Use it when you want to provide flexibility in the order in which handlers process requests or in the handling logic itself.
+
+Benefits:
+Promotes loose coupling by decoupling senders and receivers of requests.
+Allows multiple handlers to process requests independently without the sender needing to know their specific implementations.
+Provides flexibility in the order in which handlers process requests and in the handling logic itself.
+
+Example:
+Consider a scenario where you have a series of authorization checks that need to be performed for accessing a resource.
+ You can use the Chain of Responsibility pattern to create a chain of authorization handlers, each responsible for performing a specific check (e.g., user authentication, role-based access control).
+  The request is passed through the chain of handlers until one of the handlers can successfully handle it.
+
+Implementation:
+To implement the Chain of Responsibility pattern, you define an interface or abstract class for the handler and concrete implementations for each handler in the chain.
+ Each handler contains a reference to the next handler in the chain and defines a method for handling requests.
+  The client sends requests to the first handler in the chain, which then passes the request to the next handler if it cannot handle it.
+  This process continues until a handler successfully handles the request.

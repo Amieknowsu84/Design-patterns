@@ -6,7 +6,7 @@ public class Driver {
      The application should display current weather information,
      and users can subscribe to receive updates whenever the weather conditions change.
      */
-    public static void main(String args[]){
+    public static void main(String[] args){
        Weather weather = new Weather(27,"Normal Temperature.");
        //These observers can be done by concrete class as well.
        Observer mobile = (temperature,remarks)->System.out.println("mobile update Temperature is "+temperature+" remarks "+remarks);

@@ -1,0 +1,17 @@
+The Singleton pattern is a creational design pattern that ensures a class has only one instance and
+provides a global point of access to that instance.
+
+Participants:
+Singleton: This is the class that implements the Singleton pattern.
+It ensures that only one instance of the class is created and provides a static method to access that instance.
+
+When to Use:
+Use the Singleton pattern when you want to ensure that a class has only one instance,
+and you want to provide a global point of access to that instance.
+Use it when you need to control access to shared resources,
+such as database connections, thread pools, or configuration settings.
+
+Benefits:
+Provides a single global point of access to a shared instance,
+allowing all clients to access the same instance without creating multiple copies.
+Ensures that a class has only one instance, which can help conserve resources and reduce memory usage.

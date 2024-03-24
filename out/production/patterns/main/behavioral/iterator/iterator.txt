@@ -1,0 +1,26 @@
+The Iterator pattern is a behavioral design pattern that provides a way to access the elements of an aggregate object (such as a list) sequentially without exposing its underlying representation.
+ It separates the traversal of a collection from the collection itself, allowing multiple traversals of the same collection without modifying its structure.
+
+Participants:
+Iterator: This is the interface that defines methods for accessing elements sequentially in a collection. It typically includes methods like hasNext() to check if there are more elements and next() to retrieve the next element.
+
+Concrete Iterator: This is the implementation of the Iterator interface for a specific type of collection. It keeps track of the current position in the collection and provides methods to traverse the collection.
+
+Aggregate: This is the interface that defines a method for creating an iterator object. It represents the collection of objects that the iterator will traverse.
+
+Concrete Aggregate: This is the implementation of the Aggregate interface. It creates and returns a Concrete Iterator object for traversing the collection.
+
+When to Use:
+Use the Iterator pattern when you want to access the elements of a collection without exposing its internal structure.
+Use it when you want to provide a uniform way of accessing elements across different types of collections.
+Use it when you want to iterate over the elements of a collection multiple times without modifying its structure.
+
+Benefits:
+Encapsulates the traversal logic, making it easier to change the traversal algorithm or iterate over different types of collections.
+Provides a uniform way of accessing elements across different types of collections, promoting code reuse and maintainability.
+Allows multiple iterators to traverse the same collection concurrently without interfering with each other.
+Example:
+Consider a scenario where you have a list of books, and you want to iterate over the list to display information about each book. You can use the Iterator pattern to encapsulate the traversal logic and provide a uniform way of accessing the books, regardless of the underlying data structure of the list.
+
+Implementation:
+To implement the Iterator pattern, you define interfaces for the Iterator and Aggregate, and concrete implementations for each. The Aggregate interface provides a method to create an iterator object, and the Concrete Aggregate creates and returns a Concrete Iterator object. The Concrete Iterator keeps track of the current position in the collection and provides methods to traverse the collection.

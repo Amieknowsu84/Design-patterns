@@ -1,0 +1,33 @@
+The Interpreter pattern is a behavioral design pattern that is used to define a grammar for interpreting and evaluating expressions in a language.
+ It is commonly used to parse and interpret domain-specific languages or to implement expression evaluation engines.
+
+Participants:
+Abstract Expression: This is the abstract class or interface that declares an interpret method.
+ It defines the interface for executing the operation.
+
+Terminal Expression: This is a subclass of Abstract Expression.
+ It implements the interpret method for terminal symbols in the grammar.
+  Terminal expressions represent the individual elements of the language.
+
+Non-terminal Expression: This is a subclass of Abstract Expression.
+ It implements the interpret method for non-terminal symbols in the grammar.
+ Non-terminal expressions represent composite elements or combinations of terminal and non-terminal symbols.
+
+Context: This contains information that is global to the interpreter and is passed to expressions to interpret the context.
+
+Client: This builds the abstract syntax tree using terminal and non-terminal expressions and evaluates the expressions using the interpreter.
+
+When to Use:
+Use the Interpreter pattern when you have a language to interpret, and you want to represent its grammar as a class hierarchy.
+Use it when you have a domain-specific language, and you want to implement its interpretation and evaluation logic.
+Use it when the grammar is simple, and you want to avoid the complexity of a parser generator.
+Benefits:
+
+Simplifies the representation of grammars by providing a class-based hierarchy.
+Facilitates the addition of new language features by adding new subclasses of expressions.
+Promotes extensibility and maintainability by encapsulating language interpretation and evaluation logic.
+Example:
+Consider a simple arithmetic expression language that supports addition, subtraction, multiplication, and division operations. We can use the Interpreter pattern to parse and evaluate expressions in this language. Terminal expressions represent numbers, while non-terminal expressions represent operations.
+
+Implementation:
+To implement the Interpreter pattern, you define classes for each symbol in the grammar hierarchy. Terminal expressions represent individual elements, while non-terminal expressions represent combinations of terminal and non-terminal elements. You implement an interpret method in each expression class to evaluate the expression. Finally, you build and evaluate expressions using the interpreter.

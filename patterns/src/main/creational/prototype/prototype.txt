@@ -1,0 +1,21 @@
+The Prototype pattern is a creational design pattern that allows the creation of new objects by copying an existing object,
+known as the prototype.
+This pattern is useful when the construction of new objects is more efficient by copying an existing instance rather than creating a new one from scratch.
+
+Participants:
+Prototype: This is the interface or abstract class that declares a method for cloning itself.
+
+Concrete Prototype: These are the concrete implementations of the Prototype interface.
+They implement the cloning method to create a copy of themselves.
+
+Client: This is the class that creates new objects by cloning existing prototypes.
+
+When to Use:
+Use the Prototype pattern when the construction of new objects is more efficient by copying an existing instance
+rather than creating a new one from scratch.
+Use it when you want to hide the complexity of creating new objects from the client code.
+
+Benefits:
+Reduces the need for subclassing by allowing objects to be cloned instead of creating new subclasses.
+Improves performance by avoiding the overhead of creating new objects from scratch.
+Provides a flexible way to create new objects with different configurations.

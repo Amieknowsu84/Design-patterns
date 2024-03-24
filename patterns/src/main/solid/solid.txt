@@ -1,0 +1,33 @@
+The SOLID principles are a set of five object-oriented design principles aimed at making software designs more understandable, flexible, and maintainable. Each letter in SOLID represents a different principle:
+
+S - Single Responsibility Principle (SRP):
+This principle states that a class should have only one reason to change,
+meaning it should have only one responsibility or job.
+ By adhering to this principle, you can make your classes more cohesive and easier to understand,
+  test, and maintain.
+
+O - Open/Closed Principle (OCP):
+This principle states that software entities (classes, modules, functions, etc.)
+should be open for extension but closed for modification.
+It encourages you to design your systems in a way that allows them to be easily extended with new functionality without modifying existing code.
+
+L - Liskov Substitution Principle (LSP):
+This principle states that objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program.
+ In other words, subclasses should be substitutable for their base class without changing the desirable properties of the program.
+
+I - Interface Segregation Principle (ISP):
+This principle states that clients should not be forced to depend on interfaces they don't use.
+It encourages you to design cohesive interfaces that are specific to the needs of the clients that use them,
+rather than creating large,
+monolithic interfaces that cater to all possible clients.
+
+D - Dependency Inversion Principle (DIP):
+This principle states that high-level modules should not depend on low-level modules,
+but both should depend on abstractions. It also states that abstractions should not depend on details,
+but details should depend on abstractions. By adhering to this principle,
+you can design more flexible and maintainable systems that are easier to test and extend.
+
+These principles are guidelines that help you design object-oriented systems that are more modular,
+flexible, and easier to maintain over time.
+By following these principles, you can create software that is easier to understand,
+extend, and refactor, leading to higher-quality and more maintainable codebases.

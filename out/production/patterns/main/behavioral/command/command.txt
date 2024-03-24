@@ -1,0 +1,27 @@
+The Command pattern is a behavioral design pattern that encapsulates a request as an object,
+thereby allowing parameterization of clients with queues, requests, and operations.
+It allows you to parameterize objects with requests, delay the execution of a request,
+and support undoable operations.
+
+Participants:
+Command: This is the interface or abstract class that declares a method for executing a command.
+
+Concrete Command: These are the concrete implementations of the Command interface.
+They encapsulate a specific action or operation and hold a reference to the receiver object that performs the action.
+
+Receiver: This is the object that performs the actual action or operation associated with a command.
+
+Invoker: This is the object that invokes the command.
+It holds a reference to the command object and calls its execute method to trigger the action.
+
+Client: This creates and configures the command objects and assigns them to invokers.
+
+When to Use:
+Use the Command pattern when you want to parameterize objects with requests, allowing you to decouple clients from specific requests.
+Use it when you want to support undoable operations by storing commands in a history list and implementing an undo operation.
+Use it when you want to delay the execution of a request, queue requests, or execute requests in parallel.
+
+Benefits:
+Decouples the sender of a request from the object that performs the request, enabling you to vary requests and handlers independently.
+Allows you to implement undoable operations by storing command objects and their parameters in a history list.
+Provides a flexible way to parameterize objects with requests and support queuing, delaying, or scheduling requests.

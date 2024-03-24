@@ -2,7 +2,7 @@ package main.structural.proxy;
 
 public class ProxyImage implements Image {
     private RealImage realImage;
-    private String filename;
+    private final String filename;
 
     public ProxyImage(String filename) {
         this.filename = filename;

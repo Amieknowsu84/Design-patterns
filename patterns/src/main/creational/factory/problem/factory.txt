@@ -1,6 +1,0 @@
-The Restaurant class continues to get modified as long as we add
-new items for ex chicken burger
-momo burger.
-to seperate it out we create a new clas factory
-whose sole responsibility will be to give burger of the
-specified type

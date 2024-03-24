@@ -1,0 +1,27 @@
+The Mediator pattern is a behavioral design pattern that promotes loose coupling between objects by encapsulating how they interact and communicate with each other. It centralizes the communication logic between objects by introducing a mediator object that coordinates the interactions between them, instead of having the objects directly communicate with each other.
+
+Participants:
+Mediator: This is the interface or abstract class that defines the communication interface between the colleague objects. It typically declares methods for colleagues to communicate with each other.
+
+Concrete Mediator: This is the concrete implementation of the Mediator interface. It manages the communication between colleague objects and implements the mediation logic.
+
+Colleague: This is the interface or abstract class that defines the common interface for the objects that communicate through the mediator.
+
+Concrete Colleague: These are the concrete implementations of the Colleague interface. They are the objects that interact with each other through the mediator.
+
+When to Use:
+Use the Mediator pattern when you have a set of objects that need to communicate with each other in a complex way, but you want to avoid tight coupling between them.
+Use it when you want to centralize control and communication logic in one object instead of spreading it across multiple objects.
+Use it when you want to decouple the communication between objects, making it easier to maintain and extend the system.
+
+Benefits:
+Promotes loose coupling between objects by encapsulating communication logic in a mediator object.
+Simplifies the communication between objects by centralizing control and coordination.
+Improves the maintainability and scalability of the system by decoupling the objects from each other.
+Example:
+Consider a chat application where users can send messages to each other. Instead of having each user object directly communicate with other user objects, you can use a mediator object (e.g., a chat room) to manage the communication between users. The mediator object receives messages from users and forwards them to the appropriate recipients, thereby centralizing the communication logic and promoting loose coupling between users.
+
+Implementation:
+To implement the Mediator pattern, you can define a Mediator interface or abstract class that declares methods for colleagues to communicate with each other. Concrete mediator classes implement this interface and manage the communication between colleague objects. Colleague objects interact with each other through the mediator by invoking methods on it. The mediator object coordinates the communication between colleague objects based on their interactions.
+
+Overall, the Mediator pattern provides a flexible way to manage communication between objects in a complex system, promoting loose coupling and improving maintainability and scalability.

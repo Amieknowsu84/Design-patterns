@@ -1,2 +1,0 @@
-Although we separated out the code the simpleBurgerFactory method is still
-open to modifications.

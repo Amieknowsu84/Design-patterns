@@ -1,0 +1,37 @@
+The Factory Method pattern is a creational design pattern that provides an interface for creating objects in a superclass
+but allows subclasses to alter the type of objects that will be created.
+It defines an interface for creating objects but lets subclasses alter the type of objects that will be created.
+
+Participants:
+Creator: This is the abstract class or interface that declares the factory method,
+which returns an object of type Product.
+
+Concrete Creator: These are the subclasses of the Creator class that implement the factory method to create
+and return instances of Concrete Products.
+
+Product: This is the interface or abstract class that defines the type of objects that the factory method creates.
+
+Concrete Product: These are the classes that implement the Product interface or extend the Product abstract class.
+They are the objects created by the factory method.
+
+When to Use:
+Use the Factory Method pattern when you want to provide a flexible way to create objects without specifying the exact class of the object that will be created.
+Use it when you have a superclass with multiple subclasses, and you want to delegate the responsibility of creating objects to the subclasses.
+Use it when you want to decouple the client code from the concrete classes of objects being created.
+
+Benefits:
+Provides a flexible way to create objects without exposing the instantiation logic to the client.
+Promotes loose coupling between client code and the classes being created.
+Allows subclasses to determine the type of objects that will be created.
+
+Example:
+Consider a document editor application where you have different types of documents,
+such as text documents, spreadsheets, and presentations.
+You can use the Factory Method pattern to create a DocumentFactory interface with a factory method to create documents.
+Each type of document (e.g., TextDocument, SpreadsheetDocument) will implement this interface and provide its own implementation of the factory method to create the corresponding document type.
+
+Implementation:
+To implement the Factory Method pattern,
+you define an interface or abstract class for creating objects (Creator)
+and declare a factory method in it. Concrete subclasses of the Creator class (Concrete Creator)
+implement this factory method to create and return instances of Concrete Products (Product).

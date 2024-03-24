@@ -1,18 +1,26 @@
 package main.behavioral.strategy;
 
 public class Driver {
-    /*
-    Let's consider a scenario: You are building a text editor application,
-     and you want to implement different text formatting strategies.
-     Users should be able to choose formatting styles such as bold, italic, and underline.
-      Implement the Strategy Design Pattern to encapsulate each formatting strategy
-       and allow users to switch between them dynamically.
-     */
-    public static void main(String[] args){
-         TextEditor textEditor = new TextEditor();
-         textEditor.addText("Hello This is me.");
-         FormattingStrategy ItalicFormattingStrategy = new Italic();
-         textEditor.setFormattingStrategy(ItalicFormattingStrategy);
-         textEditor.addText("Changed the formatting.");
+    public static void main(String[] args) {
+        // Create strategies
+        SortingStrategy bubbleSort = new BubbleSortStrategy();
+        SortingStrategy mergeSort = new MergeSortStrategy();
+        SortingStrategy quickSort = new QuickSortStrategy();
+
+        // Create context with a default strategy
+        SortingContext context = new SortingContext(bubbleSort);
+
+        // Perform sorting using the default strategy (bubble sort)
+        int[] data = {5, 2, 7, 1, 3};
+        context.performSort(data);
+
+        // Change strategy dynamically to merge sort
+        context.setStrategy(mergeSort);
+        context.performSort(data);
+
+        // Change strategy dynamically to quick sort
+        context.setStrategy(quickSort);
+        context.performSort(data);
     }
 }
+

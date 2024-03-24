@@ -1,7 +1,7 @@
 package main.structural.proxy;
 
 public class RealImage implements Image{
-    private String filename;
+    private final String filename;
 
     public RealImage(String filename) {
         this.filename = filename;

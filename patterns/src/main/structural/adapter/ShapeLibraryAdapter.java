@@ -2,7 +2,7 @@ package main.structural.adapter;
 
 // Adapter class to adapt the ThirdPartyShapeLibrary to ShapeDrawer
 class ShapeLibraryAdapter implements ShapeDrawer {
-    private ThirdPartyShapeLibrary thirdPartyLibrary;
+    private final ThirdPartyShapeLibrary thirdPartyLibrary;
 
     public ShapeLibraryAdapter(ThirdPartyShapeLibrary thirdPartyLibrary) {
         this.thirdPartyLibrary = thirdPartyLibrary;
